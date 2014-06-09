@@ -1,0 +1,677 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pandaman</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font.css">
+
+    <link rel="stylesheet" href="css/mate.hover.css" type="text/css" />
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/panda.js"></script>
+
+    <!-- half circle -->
+    <script src="js/jquery.circliful.min.js"></script>
+    <!-- caseimg hover -->
+    <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="js/jquery.mate-hover.1-1-min.js" type="text/javascript"></script>
+
+    <!-- Load ScrollTo -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script>
+        var jq=$.noConflict();
+        jq(function(){
+            jq(".nhome").click(function(){
+                jq.scrollTo('#nav',500);
+            });
+            jq(".nservice").click(function(){
+                jq.scrollTo('#services',600);
+            });
+            jq(".ncase").click(function(){
+                jq.scrollTo('#case',700);
+            });
+            jq(".npricing").click(function(){
+                jq.scrollTo('#pricing',800);
+            });
+            jq(".nabout").click(function(){
+                jq.scrollTo('#about',900);
+            });
+            jq(".ncontact").click(function(){
+                jq.scrollTo('#contact',800);
+            });
+            jq(".looks").click(function(){
+                jq.scrollTo('#case',400);
+            });
+        });
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" /> </a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right" id="nav">
+                <li class="active"><a href="index.html" class="nhome">Home</a></li>
+                <li><a href="#" class="nservice">Services</a></li>
+                <li><a href="#" class="ncase">Case</a></li>
+                <li><a href="#" class="npricing">Pricing</a></li>
+                <li><a href="#" class="nabout">About</a></li>
+                <li><a href="#" class="ncontact">Contact</a></li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<!-- Carousel
+================================================== -->
+<div id="carousel-example-generic" class="carousel slide clearfix" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <img src="images/banner1.jpg" alt="banner1">
+            <!--<div class="carousel-caption container">
+                <h1>Welcome to Pandaman</h1>
+                <p>Make your Business being simple</p>
+            </div>-->
+        </div>
+        <div class="item">
+            <img src="images/banner2.jpg" alt="banner2">
+
+        </div>
+        <div class="item">
+            <img src="images/banner3.jpg" alt="banner3">
+
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div><!-- /.carousel -->
+
+
+<!-- Services
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container services clearfix target-fix" id="services">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <h1>Our Services</h1>
+        <div class="col-lg-4">
+            <img src="images/circle1.png" alt="Websites">
+            <h2>Websites</h2>
+            <p>By embracing both aesthetics andfunctionality, we create websites that are easy to use and engage your customers effectively.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img src="images/circle2.png" alt="Mobile Web or Apps">
+            <h2>Mobile Web or Apps</h2>
+            <p>We specialize in building cross-platform websites and apps, delivering a perfect user interface and functionality that is compatible with all mobile devices.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img src="images/circle3.png" alt="Branding">
+            <h2>Branding</h2>
+            <p>A good brand image can be the greatest strength of your company, advocating your products, services, ethos, and integrity. </p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+</div>
+
+<!-- business
+================================================== -->
+
+<div class="business clearfix">
+    <div class="container">
+        <h3>Do you have any difficulties in<br /> e-commerce?</h3>
+        <p><a class="btn btn-lg btn-primary-alt looks" href="#" role="button">Have a look at other business</a></p>
+    </div>
+</div>
+
+<!-- case
+================================================== -->
+
+<div class="case clearfix" id="case">
+    <div class="container">
+        <h3>Case</h3>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#websites" data-toggle="tab">Websites</a></li>
+                <li class=""><a href="#apps" data-toggle="tab">Apps</a></li>
+                <li class=""><a href="#branding" data-toggle="tab">Branding</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="websites">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 casedetail">
+
+                                <div data-zlname="test">
+                                    <img src="images/img.jpg" />
+                                    <div data-zl-popup="link">
+                                        <h5>Clean night sky</h5>
+                                        <p>photography</p>
+                                        <p class="btn btn-default btn-more" data-toggle="modal" data-target="#myModal2" id="casemore">more</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">case intro</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
+
+
+
+                        </div>
+                        <div class="col-xs-6 col-md-3 casedetail">
+
+                            <div data-zlname="test">
+                                <img src="images/img.jpg" />
+                                <div data-zl-popup="link">
+                                    <h5>Clean night sky</h5>
+                                    <p>photography</p>
+                                    <p class="btn btn-default btn-more" data-toggle="modal" data-target="#myModal2" id="casemore">more</p>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">case intro</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+
+
+
+                        </div>
+                        <div class="col-xs-6 col-md-3 casedetail">
+
+                            <div data-zlname="test">
+                                <img src="images/img.jpg" />
+                                <div data-zl-popup="link">
+                                    <h5>Clean night sky</h5>
+                                    <p>photography</p>
+                                    <p class="btn btn-default btn-more">more</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6 col-md-3 casedetail">
+
+                            <div data-zlname="test">
+                                <img src="images/img.jpg" />
+                                <div data-zl-popup="link">
+                                    <h5>Clean night sky</h5>
+                                    <p>photography</p>
+                                    <p class="btn btn-default btn-more">more</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6 col-md-3 casedetail">
+
+                            <div data-zlname="test">
+                                <img src="images/img.jpg" />
+                                <div data-zl-popup="link">
+                                    <h5>Clean night sky</h5>
+                                    <p>photography</p>
+                                    <p class="btn btn-default btn-more">more</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6 col-md-3 casedetail">
+
+                            <div data-zlname="test">
+                                <img src="images/img.jpg" />
+                                <div data-zl-popup="link">
+                                    <h5>Clean night sky</h5>
+                                    <p>photography</p>
+                                    <p class="btn btn-default btn-more">more</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6 col-md-3 casedetail">
+
+                            <div data-zlname="test">
+                                <img src="images/img.jpg" />
+                                <div data-zl-popup="link">
+                                    <h5>Clean night sky</h5>
+                                    <p>photography</p>
+                                    <p class="btn btn-default btn-more">more</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6 col-md-3 casedetail">
+
+                            <div data-zlname="test">
+                                <img src="images/img.jpg" />
+                                <div data-zl-popup="link">
+                                    <h5>Clean night sky</h5>
+                                    <p>photography</p>
+                                    <p class="btn btn-default btn-more">more</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="apps">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="branding">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                        <div class="col-xs-6 col-md-3 casedetail"><a href="###"><img src="images/img.jpg" /></a> </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- pricing
+================================================== -->
+<div class="pricing clearfix">
+    <div class="container">
+        <h3>Pricing table</h3>
+        <p>Standard Price</p>
+    </div>
+</div>
+
+<!-- price
+================================================== -->
+
+<div class="case price clearfix" id="pricing">
+    <div class="container">
+        <h3>Our Price</h3>
+        <div class="row price_c1">
+            <div class="col-md-4">
+                <div class="price_website">
+                    <h4>Standard Website</h4>
+                    <h5>HK$ 8,000/yearly</h5>
+                    <div>
+                        <p>HTML5 CSS3 Design</p>
+                        <p>1GB Hosting Service</p>
+                        <p>Basic Functions</p>
+                        <p>1GB Hosting Service</p>
+                        <p>2GB x 10 Mailbox</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price_website">
+                    <h4>E-Commerce website</h4>
+                    <h5>HK$ 23,000/yearly</h5>
+                    <div>
+                        <p>HTML5 CSS3 Design</p>
+                        <p>Online Shop System</p>
+                        <p>Payment Gateway</p>
+                        <p>10GB Cloud Hosting Service</p>
+                        <p>2GB x 50 Mailbox</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price_website">
+                    <h4>Custom Made Website</h4>
+                    <h5>Meet to Discuss</h5>
+                    <div>
+                        <p>HTML5 CSS3 Design</p>
+                        <p>Customized Website Functions</p>
+                        <p>Customized Payment </p>
+                        <p>Customized Cloud Server</p>
+                        <p>Customized Corporate Mailbox</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row price_c2">
+            <div class="col-md-3">
+                <div class="price_website elseweds">
+                    <h4>Website Hosting</h4>
+                    <h5 class="btn_black">HK$ 1,500/yearly</h5>
+                    <div>
+                        <p>Unlimited Traffic</p>
+                        <p>Unlimited IIS</p>
+                        <p>3GB Hosting Service</p>
+                        <p>7 x 24 Hours Support</p>
+                        <p>Free setting</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt btn_white" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="price_website elseweds">
+                    <h4>Cloud Server</h4>
+                    <h5 class="btn_green">HK$ 800/month</h5>
+                    <div>
+                        <p>2 x Intel E5620 2.4G</p>
+                        <p>2GB Memory</p>
+                        <p>40GB Drive</p>
+                        <p>2M Bandwidth</p>
+                        <p>1 x IP</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt btn_green" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="price_website elseweds">
+                    <h4>Apps</h4>
+                    <h5 class="btn_lgreen">IOS/Android</h5>
+                    <div>
+                        <p>1 x UI Design</p>
+                        <p>Custom Function</p>
+                        <p>Member system</p>
+                        <p>5GB Apps Hosting</p>
+                        <p>Free Upload To Appstore</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt btn_lgreen" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="price_website elseweds">
+                    <h4>Brand Design</h4>
+                    <h5 class="btn_gwhite">Meet to Discuss</h5>
+                    <div>
+                        <p>Logo</p>
+                        <p>Product Catalog</p>
+                        <p>VIS Design</p>
+                        <p>Exhibition Design</p>
+                        <p>Packaging design</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt btn_black" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- team
+================================================== -->
+<div class="pricing team clearfix">
+    <div class="container">
+        <h3>Our team</h3>
+        <p>We a professional and progressive tea</p>
+    </div>
+</div>
+
+<!-- about
+================================================== -->
+<div class="case about clearfix" id="about">
+    <div class="container">
+        <h3>About Us</h3>
+        <div class="row">
+            <div class="col-xs-6 col-md-3 aboutimg">
+                <img src="images/img.jpg" />
+                <h4>Aaron<br /><span>CEO</span></h4>
+                <p>Curabitur congue libero mi, et lacinia sem blandit sit amet. Donec eu mi non magna rhoncus bibendum et eu dui. Nunc iaculis placerat sapien vel imperdiet. </p>
+            </div>
+            <div class="col-xs-6 col-md-3 aboutimg">
+                <img src="images/img.jpg" />
+                <h4>Lawrence<br /><span>CMO</span></h4>
+                <p>Etiam pulvinar libero et scelerisque cursus. Sed eu nisl congue, gravida urna imperdiet, laoreet dolor. Morbi adipiscing neque erat, tincidunt
+                    porttitor est vestibulum ac.</p>
+            </div>
+            <div class="col-xs-6 col-md-3 aboutimg">
+                <img src="images/img.jpg" />
+                <h4>Linda<br /><span>CD</span></h4>
+                <p>Donec at pulvinar dolor, et lobortis est. Phasellus nibh nisi, blandit non velit sit amet, pulvinar vehicula nulla.</p>
+            </div>
+            <div class="col-xs-6 col-md-3 aboutimg">
+                <img src="images/img.jpg" />
+                <h4>Harry<br /><span>CTO</span></h4>
+                <p>Mauris dignissim felis quis justo
+                    malesuada gravida. Sed quis neque condimentum, luctus augue in, dapibus sapien.</p>
+            </div>
+
+        </div>
+
+        <div class="skills">
+            <h6>OUR SKILLS</h6>
+            <div class="row">
+
+                <div class="col-xs-4 col-md-2 sper">
+
+                     <div class="myStathalf2" data-dimension="146" data-text="35%" data-width="28" data-fontsize="24" data-percent="35" data-fgcolor="#009cff" data-bgcolor="#e5e5e5" data-type="half" data-icon="fa-task"></div>
+                     <p>graphic design</p>
+
+                </div>
+                <div class="col-xs-4 col-md-2 sper">
+
+                     <div class="myStathalf2" data-dimension="146" data-text="85%" data-width="28" data-fontsize="24" data-percent="85" data-fgcolor="#009cff" data-bgcolor="#e5e5e5" data-type="half" data-icon="fa-task"></div>
+                     <p>web-design</p>
+
+                </div>
+                <div class="col-xs-4 col-md-2 sper">
+
+                     <div class="myStathalf2" data-dimension="146" data-text="95%" data-width="28" data-fontsize="24" data-percent="95" data-fgcolor="#009cff" data-bgcolor="#e5e5e5" data-type="half" data-icon="fa-task"></div>
+                     <p>UI-DESIGN</p>
+
+                </div>
+                <div class="col-xs-4 col-md-2 sper">
+
+                    <div class="myStathalf2" data-dimension="146" data-text="25%" data-width="28" data-fontsize="24" data-percent="25" data-fgcolor="#009cff" data-bgcolor="#e5e5e5" data-type="half" data-icon="fa-task"></div>
+                    <p>photography</p>
+
+                </div>
+                <div class="col-xs-4 col-md-2 sper">
+
+                    <div class="myStathalf2" data-dimension="146" data-text="50%" data-width="28" data-fontsize="24" data-percent="50" data-fgcolor="#009cff" data-bgcolor="#e5e5e5" data-type="half" data-icon="fa-task"></div>
+                     <p>program</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- sbanenr
+================================================== -->
+<div class="pricing sbanner clearfix">
+    <div class="container">
+        <h3>You looked OVER 6000 px</h3>
+        <p>That’s Great!</p>
+    </div>
+</div>
+
+<!-- contact
+================================================== -->
+<div class="case contact clearfix" id="contact">
+    <div class="container">
+        <h3>Contact Us</h3>
+        <div class="row" style="margin-top:50px;">
+            <div class="col-md-9 mail">
+                <h4>MAIL</h4>
+                <form class="form-inline" role="form">
+                    <div class="form-group fleft">
+                        <label class="sr-only">Name</label>
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Mail</label>
+                        <input type="mail" class="form-control" placeholder="Mail">
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <textarea class="input-xlarge" id="textarea" rows="6" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn_blue">Submit mail</button>
+                </form>
+            </div>
+            <div class="col-md-3 mail ctinfo">
+                <h4>MORE INFO</h4>
+                <ul>
+                    <li>(852) 2267 8612</li>
+                    <li>info@pandaman.hk</li>
+                    <li>skype: username</li>
+                </ul>
+                <p>Unit 01D-5B 23/f<br />
+                    Nan Fung Tseun Wan, HK</p>
+                <button type="submit" class="btn btn_blue" id="map" data-toggle="modal" data-target="#myModal">Map</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog2">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h5 class="modal-title" id="myModalLabel">Map</h5>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- followus
+================================================== -->
+<div class="pricing follow clearfix">
+    <div class="container">
+        <h3>Connect with us</h3>
+        <p>Follow Us On Social Networks</p>
+        <ul>
+            <li><a class="icon-github"></a></li>
+            <li><a class="icon-flickr"></a></li>
+            <li><a class="icon-vimeo"></a></li>
+            <li><a class="icon-twitter"></a></li>
+            <li><a class="icon-facebook"></a></li>
+            <li><a class="icon-googleplus"></a></li>
+            <li><a class="icon-pinterest"></a></li>
+            <li><a class="icon-tumblr"></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- footer
+================================================== -->
+<footer id="footer">
+    <div id="bottom-footer" class="container">
+        <div class="pull-left">
+            <a href="index.html"><img src="images/logo.png" style="height:50px;" /></a>
+        </div>
+        <div class="pull-right">
+            <p>Copyright © 2014 Pandaman.hk<br /><em>Statistical Design:S-lin</em></p>
+        </div>
+    </div><!-- bottom-footer -->
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
